@@ -1,4 +1,9 @@
-// 
+// This is my solution to problem 2.
+// https://projecteuler.net/problem=2
+// It asks you to sum up all the even numbers in the fibonacci sequence where the maximum value doesnt  
+// Exceed 4 million. 
+// I have solved it more generally so the maximum value is input in the function.
+// The answer with 4 million is 4613732
 
 const sumOfEvenFibUnderX = (max) => {
     // This has to be initiated to start off the sequence.
