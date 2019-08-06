@@ -6,7 +6,7 @@ My solutions to Project Euler problems.
 There are many websites you can go on to practice programming, normally with difficult bite size problems.
 These include HackerRank, Codewars, TopCoder and CodinGame. 
 
-I use a variety of these to hone my skills, but like project euluer as it combines my two biggest passions, Programming and Math. 
+I use a variety of these to hone my skills, but like project euluer the most as it combines my two biggest passions, Programming and Math. 
 
 
 
