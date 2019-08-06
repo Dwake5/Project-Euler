@@ -11,8 +11,13 @@ I use a variety of these to hone my skills, but like project euluer the most as 
 Problems currently solved: 
 
 Problem 1
+
 Problem 2
+
 Problem 6
+
 Problem 7
+
 Problem 8
+
 Problem 15
