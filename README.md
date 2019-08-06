@@ -10,14 +10,11 @@ I use a variety of these to hone my skills, but like project euluer the most as 
 
 Problems currently solved: 
 
-Problem 1
-
-Problem 2
-
-Problem 6
-
-Problem 7
-
-Problem 8
-
-Problem 15
+<ol>
+  <li>Problem 1</li>
+  <li>Problem 2</li>
+  <li>Problem 6</li>
+  <li>Problem 7</li>
+  <li>Problem 8</li>
+  <li>Problem 15</li>
+</ol>
