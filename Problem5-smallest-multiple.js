@@ -69,7 +69,7 @@ const smallestCommonMultiple = (small, high) => {
     }, {})
 
     // The object passed from countElements is compared with the current highest,
-    // Which are stored in largestNeededFactors and overrides them if they are larger.
+    // Which are stored in largestNeededFactors and replaces them if they are larger.
     const compareWithCurrentLargest = (result) => {
         Object.entries(result).forEach(([key, value]) => {
             if (largestNeededFactors.hasOwnProperty(key)) {
@@ -92,8 +92,8 @@ const smallestCommonMultiple = (small, high) => {
         return result
     }
 
-    // For each number in the numbers array: 1. find its prime factors 
-    // 2. convert them into a an object 3. compare the object with the largest
+    // For each number in the numbers array: 1. Find its prime factors 
+    // 2. Convert them into a an object 3. Compare the object with the largest factors found so far.
     for(numb in numbers) {
         compareWithCurrentLargest(countElements(allPrimeFactors(numbers[numb])))
     }
