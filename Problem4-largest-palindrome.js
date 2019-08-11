@@ -3,7 +3,6 @@
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
 
-
 // Test if number is a palindrome. If length is odd it removes the middle digit.
 // Then it splits the number into two halves, reverses the second one and compares the two halves.
 const isPalindrome = (number) => {
@@ -23,3 +22,25 @@ const isPalindrome = (number) => {
         return false
     }
 }
+
+const highestPalindrome = () => {
+    let highest = 0 
+    let bestI = 0
+    let bestJ = 0
+    for (let i = 99; i > 70; i-- ) {
+        for (let j = 99; j > 70; j--) {
+            if (isPalindrome(i*j)){
+                current = i*j
+                if (current > highest) {
+                    highest = current
+                    bestI = i
+                    bestJ = j
+                }
+            }
+        }
+    }
+    return `Highest palindrome is at ${highest}, using ${bestI} and ${bestJ}`
+}
+
+highestPalindrome()
+// => 'Highest palindrome is at 9009, using 99 and 91'
