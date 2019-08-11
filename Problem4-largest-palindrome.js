@@ -27,8 +27,8 @@ const highestPalindrome = () => {
     let highest = 0 
     let bestI = 0
     let bestJ = 0
-    for (let i = 99; i > 70; i-- ) {
-        for (let j = 99; j > 70; j--) {
+    for (let i = 999; i > 700; i-- ) {
+        for (let j = 999; j > 700; j--) {
             if (isPalindrome(i*j)){
                 current = i*j
                 if (current > highest) {
@@ -43,4 +43,4 @@ const highestPalindrome = () => {
 }
 
 highestPalindrome()
-// => 'Highest palindrome is at 9009, using 99 and 91'
+// => 'Highest palindrome is at 906609, using 993 and 913'
