@@ -14,6 +14,7 @@ Problems currently solved:
   <li>Problem 1</li>
   <li>Problem 2</li>
   <li>Problem 3</li>
+  <li>Problem 4</li>
   <li>Problem 5</li>
   <li>Problem 6</li>
   <li>Problem 7</li>
