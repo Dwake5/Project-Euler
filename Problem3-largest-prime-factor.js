@@ -29,4 +29,4 @@ const largestPrimeFactor = n => {
 }
 
 largest_prime_factor(600851475143)
-=> 6857
+// => 6857

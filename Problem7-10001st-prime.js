@@ -33,4 +33,4 @@ const findXthPrime = (number) => {
 }
 
 findXthPrime(10001)
-=> 104,743
+// => 104,743
