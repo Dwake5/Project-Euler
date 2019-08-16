@@ -22,5 +22,6 @@ Problems currently solved:
   <li>Problem 9</li>
   <li>Problem 10</li>
   <li>Problem 11</li>
+  <li>Problem 12</li>
   <li>Problem 15</li>
 </ol>
