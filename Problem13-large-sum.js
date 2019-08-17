@@ -103,18 +103,12 @@ const numbers = [
     53503534226472524250874054075591789781264330331690
 ]
 
-// Adds up all the numbers,
-// Converts it to a string,
-// Slices it up to 11 whilst removing the decimal point,
-// Split, the string into single digit numbers,
-// Sums up the digits after parsing them.
-const addUpFirstTenNumbers = numbers => {
+const firstTenDigits = numbers => {
   sum = numbers.reduce((a, b) => a + b, 0)
   sumString = sum.toString()
   tenDigits = sumString.slice(0,1) + sumString.slice(2,11)
-  eachDigit = tenDigits.split("")
-  return eachDigit.reduce((a, b) => a + parseInt(b), 0)
+  return parseInt(tenDigits)
 }
 
-addUpNumbers(numbers)
-// => 41
+firstTenDigits(numbers)
+// => 5,537,376,230
