@@ -8,6 +8,8 @@ These include HackerRank, Codewars, TopCoder and CodinGame.
 
 I use a variety of these to hone my skills, but like project euluer the most as it combines my two biggest passions, Programming and Math. 
 
+If you would like to review my work, I would recommend problems 5, 8 and 14 for the complexity, efficiency and ellegance of my solutions.
+
 Problems currently solved: 
 
 <ol>
@@ -24,5 +26,6 @@ Problems currently solved:
   <li>Problem 11</li>
   <li>Problem 12</li>
   <li>Problem 13</li>
+  <li>Problem 14</li>
   <li>Problem 15</li>
 </ol>
