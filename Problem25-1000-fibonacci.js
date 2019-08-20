@@ -19,6 +19,8 @@
 
 // What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
 
+
+// In progress still
 const digitsOfFibonacci = digits => {
     let fib = ['1','1','1']
     while (fib[fib.length-1].length < digits) {
