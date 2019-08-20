@@ -28,5 +28,6 @@ Problems currently solved:
   <li>Problem 13</li>
   <li>Problem 14</li>
   <li>Problem 15</li>
+  <li>Problem 16</li>
   <li>Problem 29</li>
 </ol>
