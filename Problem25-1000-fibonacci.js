@@ -51,4 +51,4 @@ const digitsOfFibonacci = digits => {
 
 digitsOfFibonacci(1000)
 // Javascript displays infinity at a number higher than 10**308. As this question asks for a number
-// Higher than that, it needs to be addressed. 
+// Higher than that, it needs to be addressed. However the math above technically does work.
