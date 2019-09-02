@@ -31,5 +31,8 @@ Problems currently solved:
   <li>Problem 16</li>
   <li>Problem 18</li>
   <li>Problem 21</li>
+  <li>Problem 28</li>
   <li>Problem 29</li>
 </ol>
+
+
