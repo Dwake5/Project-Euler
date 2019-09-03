@@ -33,6 +33,9 @@ Problems currently solved:
   <li>Problem 21</li>
   <li>Problem 28</li>
   <li>Problem 29</li>
+  <li>Problem 42</li>
+  <li>Problem 58</li>
+  <li>Problem 67 (by extension of problem 18)</li>
 </ol>
 
 
