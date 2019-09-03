@@ -1,6 +1,10 @@
 # Project-Euler
 My solutions to Project Euler problems. 
 
+Total completed: 23
+
+Highest completed: 58 (67 is void because same as 18)
+
 <a href="https://projecteuler.net/about">This is a page</a> about the problems and  <a href="https://projecteuler.net/archives">here is a list</a> of the problems. 
 
 There are many websites you can go on to practice programming, normally with difficult bite size problems.

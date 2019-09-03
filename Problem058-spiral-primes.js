@@ -23,10 +23,10 @@
 // So I shall generate only the 4 new ones, test them each for primeness and then update global prime/nonprime variables.
 // And after update the globals check the ratio. When it is below 1/10 The program will exit and the legth of the side revealed or calculated.
 
-// Takes a long time to run (1m or so for 10% input)
+// Takes a long time to run (3m or so for 10% input)
 
 const sizeOfSpiralPrimeUnder = percent => {
-    let primes = 5 // 3,5,7
+    let primes = 3 // 3,5,7
     let notPrimes = 2 // 1,9
     let currentSquareSize = 3
     let ratio = 1
@@ -73,4 +73,4 @@ const sizeOfSpiralPrimeUnder = percent => {
 }
   
 sizeOfSpiralPrimeUnder(10)
-// => 'Primes have fallen under 10%, when the square size is 26,251'
+// => 'Primes have fallen under 10%, when the square size is 26,241'
