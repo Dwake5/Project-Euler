@@ -34,10 +34,11 @@ const findPythagoreanTriple = target => {
         for (let b = bMin; b <= bMax; b++ ) {
           let c = (a**2 + b**2)**0.5
             if (c % 1 === 0 && (a+b+c === target)) {
-                return final.push(a, b, c)
+                final.push(a, b, c)
             }
         }
     }
+    return final
 }
 
 findPythagoreanTriple(1000)
