@@ -3,7 +3,7 @@
 // What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 // This problem asks us to find the lowest number that multiple other given numbers can be evenly
-// Divdided in to. Progotmatically, perhaps the easiest way to do this is by making a for-loop
+// Divdided in to. Programmatically, perhaps the easiest way to do this is by making a for-loop
 // And iterating upwards by the largest number to infinity and each time checking wether it is is divisible
 // By all lesser numbers or not. 
 // Of note is that ** means to the power to, often denoted with a ^ or just a smaller exponent with written math.
