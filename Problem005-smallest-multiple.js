@@ -59,9 +59,9 @@ const smallestCommonMultiple = (small, high) => {
     // Passed to it from allPrimeFactors and then converts that into an object. 
     const countElements = arr => arr.reduce((result, elem) => {
         if (result.hasOwnProperty(elem)) {
-        result[elem] += 1
+            result[elem] += 1
         } else {
-        result[elem] = 1
+            result[elem] = 1
         }
         return result
     }, {})
