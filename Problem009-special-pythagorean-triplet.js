@@ -35,6 +35,7 @@ const findPythagoreanTriple = target => {
           let c = (a**2 + b**2)**0.5
             if (c % 1 === 0 && (a+b+c === target)) {
                 final.push(a, b, c)
+                break
             }
         }
     }
