@@ -39,6 +39,9 @@ const findPythagoreanTriple = target => {
             }
         }
     }
+    if (!final.length) {
+      return 'No solution found'
+    }
     return final
 }
 
