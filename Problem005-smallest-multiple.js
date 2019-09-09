@@ -49,11 +49,9 @@ const smallestCommonMultiple = (small, high) => {
                 n/=i
                 factors.push(i)
                 i = 1
-            } 
-            if (i === Math.ceil(Math.sqrt(n)) && i !== 1) {
-                factors.push(Number(n))
-            }
+            }  
         }
+        factors.push(n)
         return factors
     }
 
