@@ -85,7 +85,7 @@ const smallestCommonMultiple = (small, high) => {
     const finalCalculation = () => {
         let result = 1
         Object.entries(largestNeededFactors).forEach(([key, value]) => {
-        result *= key ** value
+            result *= key ** value
         })
         return result
     }
