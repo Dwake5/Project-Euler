@@ -9,7 +9,8 @@
 // I have saved the file as Problem022-names.txt.
 // The solution reads the file saved above, converts it into an array, so that it can be sorted.
 // It is sorted alphabetically, then each word is put through asciiValue, this essentially maps letters to thier
-// Place in the alphabet. 
+// Place in the alphabet. A word is scored and then added to totalSum, loops to next word, etc. 
+
 
 const allNamesScore = () => {
     let fs = require('fs')
