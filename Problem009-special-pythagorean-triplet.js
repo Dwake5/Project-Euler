@@ -20,13 +20,13 @@
 
 // We have calculated that 414 <= C <= 500.
 // We can therefore state that 500 <= a+b <= 586 
-// A can be a minimum of 2 and B can be a max imum of 498
+// A can be a minimum of 2 and B can be a maximum of 498
 
 // I have increased the efficiency of most solutions online by 16x. They are going from 1 to 1000 for both of a + b.
 // Here a and b are only going from 0 -> 0.25 and 0.25 -> 0.5, respectively. Essentially they are checking 1000^2 things,
 // Compared to my 250^2 calculations. 1000^2 / 250^2 = 1/16
 
-const findPythagoreanTriple = (target) => {
+const findPythagoreanTriple = target => {
     let final = []
     let aMax = bMin = Math.ceil(target/4)
     let bMax = bMin * 2
@@ -34,10 +34,15 @@ const findPythagoreanTriple = (target) => {
         for (let b = bMin; b <= bMax; b++ ) {
           let c = (a**2 + b**2)**0.5
             if (c % 1 === 0 && (a+b+c === target)) {
-                return final.push(a, b, c)
+                final.push(a, b, c)
+                break
             }
         }
     }
+    if (!final.length) {
+      return 'No solution found'
+    }
+    return final
 }
 
 findPythagoreanTriple(1000)

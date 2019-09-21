@@ -3,7 +3,7 @@
 // What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 // This problem asks us to find the lowest number that multiple other given numbers can be evenly
-// Divdided in to. Progotmatically, perhaps the easiest way to do this is by making a for-loop
+// Divdided in to. Programmatically, perhaps the easiest way to do this is by making a for-loop
 // And iterating upwards by the largest number to infinity and each time checking wether it is is divisible
 // By all lesser numbers or not. 
 // Of note is that ** means to the power to, often denoted with a ^ or just a smaller exponent with written math.
@@ -49,11 +49,9 @@ const smallestCommonMultiple = (small, high) => {
                 n/=i
                 factors.push(i)
                 i = 1
-            } 
-            if (i === Math.ceil(Math.sqrt(n)) && i !== 1) {
-                factors.push(Number(n))
-            }
+            }  
         }
+        factors.push(n)
         return factors
     }
 
@@ -61,9 +59,9 @@ const smallestCommonMultiple = (small, high) => {
     // Passed to it from allPrimeFactors and then converts that into an object. 
     const countElements = arr => arr.reduce((result, elem) => {
         if (result.hasOwnProperty(elem)) {
-        result[elem] += 1
+            result[elem] += 1
         } else {
-        result[elem] = 1
+            result[elem] = 1
         }
         return result
     }, {})
@@ -87,7 +85,7 @@ const smallestCommonMultiple = (small, high) => {
     const finalCalculation = () => {
         let result = 1
         Object.entries(largestNeededFactors).forEach(([key, value]) => {
-        result *= key ** value
+            result *= key ** value
         })
         return result
     }
