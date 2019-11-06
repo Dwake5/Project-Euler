@@ -39,7 +39,7 @@ const arrayCanSumToX = numb => {
   let low = 0;
   let high = length;
 
-  while (low < high) {
+  while (low <= high) {
     if (abundantNumbers[low] + abundantNumbers[high] === numb) {
       return true;
     } else if (abundantNumbers[low] + abundantNumbers[high] < numb) {
@@ -62,6 +62,4 @@ const checkIfProductOfTwoAbundant = () => {
 
 populateAbundantNumbers();
 checkIfProductOfTwoAbundant();
-// => 4179935
-
-// Gives 64 higher than correct solution.
+// => 4179871
