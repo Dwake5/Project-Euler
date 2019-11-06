@@ -8,34 +8,33 @@
 
 // I have saved the file as Problem022-names.txt.
 // The solution reads the file saved above, converts it into an array, so that it can be sorted.
-// It is sorted alphabetically, then each word is put through asciiValue, this essentially maps letters to thier
-// Place in the alphabet. A word is scored and then added to totalSum, loops to next word, etc. 
-
+// It is sorted alphabetically, then each word is put through asciiValue, this essentially maps letters to their
+// Place in the alphabet. A word is scored and then added to totalSum, loops to next word, etc.
 
 const allNamesScore = () => {
-    let fs = require('fs')
-    let totalSum = 0
-    
-    fs.readFile('./Problem022-names.txt', (err, data) => {
-        solution(eval("[" + data.toString() + "]"))
-    })
+  let fs = require("fs");
+  let totalSum = 0;
 
-    const solution = data => {
-        data.sort((a, b) => (a > b) - (a < b))
-        for (let i = 0; i < data.length; i++) {
-            totalSum += asciiValue(data[i]) * (i + 1)
-        }
-        return totalSum
+  fs.readFile("./Problem022-names.txt", (err, data) => {
+    solution(eval("[" + data.toString() + "]"));
+  });
+
+  const solution = data => {
+    data.sort((a, b) => (a > b) - (a < b));
+    for (let i = 0; i < data.length; i++) {
+      totalSum += asciiValue(data[i]) * (i + 1);
     }
+    return totalSum;
+  };
 
-    const asciiValue = str => {
-        let wordSum = 0;
-        for (let i = str.length; i--; ) {
-            wordSum += str.charCodeAt(i) - 64 // 96 if lowercase
-        }
-        return wordSum;
+  const asciiValue = str => {
+    let wordSum = 0;
+    for (let i = str.length; i--; ) {
+      wordSum += str.charCodeAt(i) - 64; // 96 if lowercase
     }
-}
+    return wordSum;
+  };
+};
 
-allNamesScore()
+allNamesScore();
 // => 871,198,282
